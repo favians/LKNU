@@ -90,6 +90,8 @@ from blueprints.masterSekolah.resources import bp_masterSekolah
 from blueprints.masterPantiAsuhan.resources import bp_masterPantiAsuhan
 from blueprints.donatur.resources import bp_donatur
 from blueprints.dataDuafa.resources import bp_dataDuafa
+from blueprints.dataYatim.resources import bp_dataYatim
+from blueprints.penerimaanDonasi.resources import bp_penerimaanDonasi
 
 app.register_blueprint(bp_auth, url_prefix='/login')
 app.register_blueprint(bp_client, url_prefix='/client' )
@@ -98,5 +100,7 @@ app.register_blueprint(bp_masterSekolah, url_prefix='/mastersekolah' )
 app.register_blueprint(bp_masterPantiAsuhan, url_prefix='/masterpantiasuhan' )
 app.register_blueprint(bp_donatur, url_prefix='/donatur' )
 app.register_blueprint(bp_dataDuafa, url_prefix='/dataduafa' )
+app.register_blueprint(bp_dataYatim, url_prefix='/datayatim' )
+app.register_blueprint(bp_penerimaanDonasi, url_prefix='/penerimaandonasi' )
 
 db.create_all()
