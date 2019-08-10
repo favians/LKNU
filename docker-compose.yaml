@@ -1,0 +1,8 @@
+version : '3'
+
+services:
+  lknu_server:
+    image: lknu:project
+    ports:
+      - 5000:5000
+    container_name: lknu_project
