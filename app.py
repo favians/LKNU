@@ -20,6 +20,7 @@ if __name__ == '__main__':
     try:
         if sys.argv[1] == 'db':
             manager.run()
+            sys.exit()
     except Exception as e:
         # define log format and create a rotating log with max size of 1mb and max backup to 10 files
         formatter = logging.Formatter("[%(asctime)s] {%(pathname)s:%(lineno)s} %(levelname)s - %(message)s")
