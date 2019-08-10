@@ -92,6 +92,7 @@ from blueprints.donatur.resources import bp_donatur
 from blueprints.dataDuafa.resources import bp_dataDuafa
 from blueprints.dataYatim.resources import bp_dataYatim
 from blueprints.penerimaanDonasi.resources import bp_penerimaanDonasi
+from blueprints.penyaluran.resources import bp_penyaluran
 
 app.register_blueprint(bp_auth, url_prefix='/login')
 app.register_blueprint(bp_client, url_prefix='/client' )
@@ -102,5 +103,6 @@ app.register_blueprint(bp_donatur, url_prefix='/donatur' )
 app.register_blueprint(bp_dataDuafa, url_prefix='/dataduafa' )
 app.register_blueprint(bp_dataYatim, url_prefix='/datayatim' )
 app.register_blueprint(bp_penerimaanDonasi, url_prefix='/penerimaandonasi' )
+app.register_blueprint(bp_penyaluran, url_prefix='/penyaluran' )
 
 db.create_all()
