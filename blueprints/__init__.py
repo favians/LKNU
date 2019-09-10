@@ -53,7 +53,7 @@ def non_internal_required(fn):
 ####Database####
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://vian:warung999oke@warung999.c26kug0ctusy.ap-southeast-1.rds.amazonaws.com:3306/LKNU'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://a:b@c:3306/LKNU'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
